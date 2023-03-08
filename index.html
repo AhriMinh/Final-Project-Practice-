@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+
+    <!-- Link boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--Link Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Inter:wght@100;200;300&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&family=Sevillana&family=Simonetta:ital@0;1&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Inter:wght@100;200;300&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&family=Sevillana&family=Simonetta:ital@0;1&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Link font awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.css" 
+    integrity="sha512-52iYFYEOPiH9mTUxADaw8Lux1ycFqSEZ50Rc4usS3eJX4DA6xIEBK7OdKQpKvKDR4M41OOSErCSgYq7Z9Mqq5g==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+
+    <!-- Link css style -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+    <!-- Start-Navigation-section -->
+    <nav class="navbar navbar-expand-md" style="background-color: #ffedef;">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img style="width: 20rem;" class="brand-logo" src="./pictrure/todaydisheslogo.png" alt="brand-logo">
+            </a>
+
+            <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navmenu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#donate" class="nav-link">Donate Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#lucky-card" class="nav-link">Fortune Slip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link">The Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-us" class="nav-link">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Ending-navigation-section -->
+
+
+
+
+
+    <!-- Start-Lucky-card-section -->
+    <section class="lucky-card">
+        <div class="lucky-card-container">
+            <div class="box-container">
+                <img src="pictrure/thebox.jpg" alt="Ảnh" class="box-image">
+                <img src="pictrure/thecard.jpg" alt="Ảnh" class="card-image">
+            </div>
+            
+
+            <div class="row text-center g-3 button-container">
+
+              <!--Button-1-->
+              <div class="col-lg">
+                <button class="renew-button" onclick="refreshPage()">
+                  <div class="icon-container">
+                      <i class="fa fa-sync"></i>
+                  </div>
+                  Renew the cards
+                </button>
+              </div>
+
+              <!--Button-2-->
+              <div class="col-lg">
+                <button id="show-box">
+                  <div class="icon-container">
+                      <i class="fa fa-utensils"></i>
+                  </div>
+                  Draw a lucky card
+                </button>
+              </div>
+
+              <!--Button-3-->
+              <div class="col-lg">
+                <button class="result-button">
+                  <div class="icon-container">
+                      <i class="fa fa-utensils"></i>
+                  </div>
+                  Decipher lucky card
+                  <div class="container-result">
+                      <h2> Today's Dishes:</h2>
+                      <p>Mỳ vằn thắn</p>
+                      <img src="pictrure/my-van-than-ngon.jpg" alt="dishes-image">
+                  </div>
+                </button>
+              </div>
+            </div>
+        </div>
+
+        <script  src="./js/luckycard.js"></script>
+    </section>
+
+    <!--Ending-Lucky-card-section -->
+
+    <section class="menu">
+        <h2 class="menu-title">
+            Menu
+        </h2>
+
+        <div id="carouselExampleIndicators" class="carousel slide mb-md-5">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active carousel-item-container">
+                    <div>
+                        <div class="container-dishes">
+                            <div id="menu-dishes">
+                                
+                            </div>
+                
+                        </div>   
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item-container">
+                    <div>
+                        <div class="container-dishes">
+                            <div class="menu-dishes">
+                                <div class="card">
+                                    <img src="pictrure/dishes/Gửi-RGB.vn-8.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text">Bánh Bèo Chén</p>
+                                    </div>
+                                    <div class="menu-dishes-overview">
+                                        <h3>Bánh Bèo Chén</h3>
+                                        <p>Không biết bánh Bèo có từ bao giờ, chỉ biết rằng những chiếc bánh mỏng manh, bình dị đó là đặc sản khá nổi tiếng của vùng đất Cố Đô. Được chế biến từ bột gạo, khuôn bánh là những chiếc chén nhỏ xíu, ăn kèm với nước mắm ngọt, món ăn đơn giản là vậy nhưng ẩn chứa bên trong là một quá trình chế biến tương đối công phu.</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <script src="./js/APIs.js"></script>
+
+
+
+    <!-- Start-About-us-section -->
+    <section id="about-us" class="text-start py-5">
+      <h3 class="text-center about-us-title">About Us</h3>
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div class="about-us-text">
+            <h3>Our Goals</h3>
+              <p>Chúng tôi là một trang web giúp bạn trả lời câu hỏi kinh điển ngày nay: "Hôm nay ăn gì?" 
+                  Để bạn có thể tận hưởng món ăn của mình một cách trọn vẹn nhất mà không hao tổn tâm lực vì một câu hỏi không có lời giải. 
+                  Những sự lựa chọn được mang đến không chỉ là những món ăn ngon - đặc sản của nhiều vùng đến từ quốc gia Việt Nam, 
+                  mà còn đảm bảo có đầy đủ dinh dưỡng và năng lượng cho ngày dài.
+              </p>
+              <ul>
+                  <li>Đem đến câu trả lời nhanh chóng</li>
+                  <li>Sự lựa chọn về đồ ăn đa dạng</li>
+                  <li>Hoàn toàn miễn phí</li>
+              </ul>
+          </div>
+          <img src="pictrure/animemaid-removebg-preview.png" style="object-fit: cover;" alt="" class="image-fluid w-50 d-none d-md-block">
+        </div>
+      </div>
+    </section>
+    <!-- Ending-About-us-section -->
+
+
+
+    <!--Start-Members-section -->
+    <section id="members">
+        <div class="container">
+            <h3 class="text-center our-member-title">Our members</h3>
+            <div class="row text-center g-1">
+
+                <!-- Member 1 -->
+                <div class="col-md">
+                    <div class="member">
+                        <img class="member-avatar" src="pictrure/member-1.jpg">
+                        <h3>Dương Quang Minh</h3>
+                        <p>Founder</p>
+                        <div class="member-link">
+                            <a href="https://www.facebook.com/profile.php?id=100011550905634">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/dgqgminh/?fbclid=IwAR3n5A4QuPtsY62mwXg0qyISZQX-dYmWYbmyTT0l-MiyGU49Q0zZFu12FrA">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/AhriMinh">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Member 2 -->
+                <div class="col-md">
+                    <div class="member">
+                        <img class="member-avatar" src="pictrure/member-2.jpg">
+                        <h3>Dương Quang Minh</h3>
+                        <p>Founder</p>
+                        <div class="member-link">
+                            <a href="https://www.facebook.com/profile.php?id=100011550905634"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/dgqgminh/?fbclid=IwAR3n5A4QuPtsY62mwXg0qyISZQX-dYmWYbmyTT0l-MiyGU49Q0zZFu12FrA"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/AhriMinh"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!--Ending-Members-section -->
+
+
+    <!-- Footer -->
+  <footer class="text-center text-lg-start footer-total" style="background-color: #ffedef">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6>
+            <p>
+              Here you can use rows and columns to organize your footer
+              content. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a class="text-black">MDBootstrap</a>
+            </p>
+            <p>
+              <a class="text-black">MDWordPress</a>
+            </p>
+            <p>
+              <a class="text-black">BrandFlow</a>
+            </p>
+            <p>
+              <a class="text-black">Bootstrap Angular</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+            <p>
+              <a class="text-black">Your Account</a>
+            </p>
+            <p>
+              <a class="text-black">Become an Affiliate</a>
+            </p>
+            <p>
+              <a class="text-black">Shipping Rates</a>
+            </p>
+            <p>
+              <a class="text-black">Help</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3" />
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2020 Copyright:
+              <a class="text-black" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a class="btn btn-outline-dark btn-floating m-1" class="text-black" role="button"><i
+                class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-outline-dark btn-floating m-1" class="text-black" role="button"><i
+                class="fab fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-outline-dark btn-floating m-1" class="text-black" role="button"><i
+                class="fab fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-dark btn-floating m-1" class="text-black" role="button"><i
+                class="fab fa-instagram"></i></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- End of Footer -->
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
