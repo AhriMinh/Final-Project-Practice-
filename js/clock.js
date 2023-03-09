@@ -59,3 +59,31 @@ function updateTime() {
   setInterval(function() {
     updateTime()
   }, 1000);
+
+
+
+// Lấy đối tượng HTML của câu hỏi
+const question = document.getElementById("question");
+
+// Thiết lập múi giờ cho Việt Nam
+const vietnamTimezoneOffset = 7;
+
+// Lấy thời gian hiện tại ở Việt Nam
+const nowInVietnam = new Date(new Date().getTime() + (vietnamTimezoneOffset * 60 * 60));
+
+// Kiểm tra thời gian hiện tại thuộc khung giờ nào trong ngày
+let timeOfDay;
+if (nowInVietnam.getHours() < 12) {
+  timeOfDay = "sáng nay";
+} else if (nowInVietnam.getHours() < 17) {
+  timeOfDay = "chiều nay";
+} else if (nowInVietnam.getHours() < 20) {
+  timeOfDay = "trưa nay";
+} else {
+  timeOfDay = "tối nay";
+}
+
+console.log(nowInVietnam.getHours());
+
+// Thiết lập câu hỏi
+question.innerText = `${timeOfDay} ăn gì?`;

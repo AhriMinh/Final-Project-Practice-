@@ -60,7 +60,7 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#donate" class="nav-link">Donate Us</a>
+                        <a href="#hero" class="nav-link">Donate Us</a>
                     </li>
                     <li class="nav-item">
                         <a href="#lucky-card" class="nav-link">Fortune Slip</a>
@@ -78,11 +78,77 @@
     <!-- Ending-navigation-section -->
 
 
+        <!-- Start-Hero-section -->
+
+        <section id="hero">
+          <div class="container" style="position: relative">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-12">
+                <div class="row d-flex justify-content-around" >
+                  <div
+                    class="col-md-6 d-flex flex-column align-items-center justify-content-evenly"
+                  >
+                    <div>
+                      <div class="hero-title" style="margin-bottom: 50px;">
+                        Are you struggling because don't know what to eat today?
+                      </div>
+                      <div class="hero-title">
+                        Don't worry! <br />
+                        We were born to help you
+                      </div>
+                    </div>
+                    <div class="container-fluid d-flex gap-3">
+                      <a href="#about-us" class="hero-button-1">Donate Us</a>
+                      <a href="#lucky-card" class="hero-button-2">Draw a Card</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="container">
+                      <div class="d-flex">
+                        <p class="hero-name">TODAY'S DISHES</p>
+                      </div>
+                    </div>
+                    <div class="hero-desc">
+                      <p>
+                        Let our website decide your meal, so you can focus on
+                        enjoying it!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+      <!-- Ending-Hero-section -->
+
+
+
+        <!-- Start-Clock-section -->
+
+        <section id="clock">
+          <div class="time">
+              <span class="hms"></span>
+              <span class="ampm"></span>
+              <br>
+              <span class="date"></span>
+          </div>
+  
+          <p class="clock-title" id="question"></p>
+  
+          <script src="./js/clock.js"></script>
+  
+      </section>
+  
+      <!-- Ending-Clock-section -->
+
+
 
 
 
     <!-- Start-Lucky-card-section -->
-    <section class="lucky-card">
+    <section id="lucky-card">
         <div class="lucky-card-container">
             <div class="box-container">
                 <img src="pictrure/thebox.jpg" alt="Ảnh" class="box-image">
@@ -90,30 +156,29 @@
             </div>
             
 
-            <div class="row text-center g-3 button-container">
+            <div class="button-container">
 
               <!--Button-1-->
-              <div class="col-lg">
+              
                 <button class="renew-button" onclick="refreshPage()">
                   <div class="icon-container">
                       <i class="fa fa-sync"></i>
                   </div>
                   Renew the cards
                 </button>
-              </div>
 
               <!--Button-2-->
-              <div class="col-lg">
+              
                 <button id="show-box">
                   <div class="icon-container">
                       <i class="fa fa-utensils"></i>
                   </div>
                   Draw a lucky card
                 </button>
-              </div>
+              
 
               <!--Button-3-->
-              <div class="col-lg">
+              
                 <button class="result-button">
                   <div class="icon-container">
                       <i class="fa fa-utensils"></i>
@@ -125,7 +190,7 @@
                       <img src="pictrure/my-van-than-ngon.jpg" alt="dishes-image">
                   </div>
                 </button>
-              </div>
+              
             </div>
         </div>
 
@@ -134,88 +199,18 @@
 
     <!--Ending-Lucky-card-section -->
 
-    <section class="menu">
-        <h2 class="menu-title">
-            Menu
-        </h2>
-
-        <div id="carouselExampleIndicators" class="carousel slide mb-md-5">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active carousel-item-container">
-                    <div>
-                        <div class="container-dishes">
-                            <div id="menu-dishes">
-                                
-                            </div>
-                
-                        </div>   
-                    </div>
-                </div>
-                <div class="carousel-item carousel-item-container">
-                    <div>
-                        <div class="container-dishes">
-                            <div class="menu-dishes">
-                                <div class="card">
-                                    <img src="pictrure/dishes/Gửi-RGB.vn-8.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                    <p class="card-text">Bánh Bèo Chén</p>
-                                    </div>
-                                    <div class="menu-dishes-overview">
-                                        <h3>Bánh Bèo Chén</h3>
-                                        <p>Không biết bánh Bèo có từ bao giờ, chỉ biết rằng những chiếc bánh mỏng manh, bình dị đó là đặc sản khá nổi tiếng của vùng đất Cố Đô. Được chế biến từ bột gạo, khuôn bánh là những chiếc chén nhỏ xíu, ăn kèm với nước mắm ngọt, món ăn đơn giản là vậy nhưng ẩn chứa bên trong là một quá trình chế biến tương đối công phu.</p>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                
-                        </div>    
-                    </div>
-                </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+    <section id="menu">
+      <h3 class="text-center menu-title">The Menu</h3>
+      <div class="menu-container">
+        <div class="menu-items"></div>
+        <div class="pagination"></div>
+      </div>
+      
+      
     </section>
 
-    <script src="./js/APIs.js"></script>
+    <script src="./js/menu.js"></script>
+
 
 
 
@@ -301,11 +296,9 @@
         <div class="row">
           <!-- Grid column -->
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6>
+            <h6 class="text-uppercase mb-4 font-weight-bold">Today's Dishes</h6>
             <p>
-              Here you can use rows and columns to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
+              Dự Án được thành lập vào tháng 2 năm 2023. Đây là Project cuối khóa C4E135 của học viên Dương Quang Minh và Trần Anh Kiên
             </p>
           </div>
           <!-- Grid column -->
@@ -316,16 +309,16 @@
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
             <p>
-              <a class="text-black">MDBootstrap</a>
+              <a class="text-black">Website</a>
             </p>
             <p>
-              <a class="text-black">MDWordPress</a>
+              <a class="text-black">Application</a>
             </p>
             <p>
-              <a class="text-black">BrandFlow</a>
+              <a class="text-black">Service</a>
             </p>
             <p>
-              <a class="text-black">Bootstrap Angular</a>
+              <a class="text-black">Solution</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -342,7 +335,7 @@
               <a class="text-black">Become an Affiliate</a>
             </p>
             <p>
-              <a class="text-black">Shipping Rates</a>
+              <a class="text-black">Donate Us</a>
             </p>
             <p>
               <a class="text-black">Help</a>
@@ -355,9 +348,9 @@
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-home mr-3"></i> Lang Street, Dong Da, Hanoi</p>
+            <p><i class="fas fa-envelope mr-3"></i> duongminhquang11357@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +84 903 49 1250</p>
             <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
           </div>
           <!-- Grid column -->
@@ -375,8 +368,8 @@
           <div class="col-md-7 col-lg-8 text-center text-md-start">
             <!-- Copyright -->
             <div class="p-3">
-              © 2020 Copyright:
-              <a class="text-black" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+              © 2023 Copyright:
+              <a class="text-black" href="https://mdbootstrap.com/">Today's Dishes - Project</a>
             </div>
             <!-- Copyright -->
           </div>
