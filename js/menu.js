@@ -119,7 +119,6 @@ let menuItems = [
         image: "./pictrure/dishes/Gửi-RGB.vn-27.jpg",
         description: "Phở là một món ăn truyền thống của Việt Nam, có nguồn gốc từ Nam Định, Hà Nội và được xem là một trong những món ăn tiêu biểu cho nền ẩm thực Việt Nam. Thành phần chính của phở là bánh phở và nước dùng cùng với thịt bò hoặc thịt gà cắt lát mỏng. Thịt bò thích hợp nhất để nấu phở là thịt, xương từ các giống bò ta (bò nội, bò vàng). "
       },
-    //... tương tự cho 22 món ăn còn lại
   ];
   
 
@@ -181,3 +180,4 @@ displayMenuItems(4);
 displayPagination();
 displayMenuItems(1);
 displayPagination();
+

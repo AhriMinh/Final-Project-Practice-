@@ -149,6 +149,17 @@
 
     <!-- Start-Lucky-card-section -->
     <section id="lucky-card">
+      <h3 class="text-center lucky-card-title">Lucky Card</h3>
+      <p class="text-center instruct">Hướng dẫn sử dụng:</p>
+      <div class="container">
+        <ul>
+        <li>Click vào nút "Draw a lucky card" để rút một quẻ may mắn ngẫu nhiên</li>
+        <li>Sau khi rút quẻ xong, thông báo "rút quẻ thành công" sẽ hiện lên, lúc này bạn chỉ cần nhấn giữ nút "Decipher lucky card" để giải quẻ và xem kết quả</li>
+        <li>Nếu muốn thay đổi kết quả, bạn có thể ấn nút "Renew the cards" để làm mới hộp quẻ và bốc lại quẻ may mắn</li>
+      </ul>
+
+      </div>
+
         <div class="lucky-card-container">
             <div class="box-container">
                 <img src="pictrure/thebox.jpg" alt="Ảnh" class="box-image">
@@ -169,7 +180,7 @@
 
               <!--Button-2-->
               
-                <button id="show-box">
+                <button onclick="getRandomFood()" id="show-box">
                   <div class="icon-container">
                       <i class="fa fa-utensils"></i>
                   </div>
@@ -179,7 +190,7 @@
 
               <!--Button-3-->
               
-                <button class="result-button">
+                <button  class="result-button">
                   <div class="icon-container">
                       <i class="fa fa-utensils"></i>
                   </div>
@@ -188,6 +199,11 @@
                       <h2> Today's Dishes:</h2>
                       <p>Mỳ vằn thắn</p>
                       <img src="pictrure/my-van-than-ngon.jpg" alt="dishes-image">
+                  </div>
+                  <div class="container-result">
+                    <img id="foodImage" src="" alt="">
+                    <h2 id="foodName"></h2>
+                    <p id="foodDescription"></p>
                   </div>
                 </button>
               
