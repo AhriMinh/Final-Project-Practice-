@@ -150,10 +150,11 @@
   
   .clock-title {
     color: black;
-    font-family: "Work Sans", sans-serif;
+    font-family: Lobster;
     font-weight:300;
-    font-size: 40px;
+    font-size: 60px;
     text-align: center;
+    text-shadow: 5px 5px 10px #f58590;
   }
   
   
@@ -300,8 +301,7 @@
   
 
 
-    /*Lucky-card Section*/
-
+    /*Start Lucky-card Section*/
     .lucky-card-title {
       padding-top: 50px;
       font-size: 60px;
@@ -309,15 +309,9 @@
       font-family: "Work Sans", sans-serif;
     }
 
-    #lucky-card .instruct {
-      font-size: 30px;
-      font-family: Work Sans;
-      padding-top: 20px;
-    }
 
     #lucky-card li {
-      font-size: 16px;
-      font-family: Work Sans;
+      font-size: 18px;
 
     }
   
@@ -330,7 +324,6 @@
       margin-top: 100px;
     }
     
-    
     .box-image {
       position: relative;
       margin: 0 auto;
@@ -338,7 +331,6 @@
       margin-bottom: 50px;
       z-index: 1;
     }
-    
     
     .card-image {
       position: absolute;
@@ -349,7 +341,6 @@
       left: 50px;
       height: 350px;
     }
-    
     
     .lucky-card-container {
       display: flex;
@@ -472,10 +463,11 @@
     .lucky-card {
       border: none;
     }
+    /*Ending Lucky-card Section*/
 
 
 
-    /*Result-Section*/
+    /*Start Result Section*/
     .container-result {
       background-color:var(--background-color-1);
       width: 1440px;
@@ -524,16 +516,15 @@
     .result-button:active .container-result {
       transform: translateY(0);
     }
+    /*Ending Result Section*/
     
 
 
   
-    /*Menu - Section*/
-
+    /*Start - Menu - Section*/
     #menu {
       margin-top: 50px;
     }
-
 
     .menu-title {
       font-size: 60px;
@@ -618,9 +609,12 @@
     .menu-item:hover .item-description {
       transform: translateY(0%);
     }
+    /*Ending - Menu - Section*/
+
+
+
   
-  /*Member Section*/
-  
+  /*Start About Us Section*/
   #about-us {
     background-color: var(--background-color-1);
     margin-top: 50px;
@@ -645,16 +639,18 @@
   .about-us-text li {
     font-size: 18px;
   }
+  /*Ending About Us Section*/
   
-  /*Member Section*/
-  
+
+
+
+  /*Start Member Section*/
   .our-member-title {
     font-size: 60px;
     font-weight: 200;
     font-family: "Work Sans", sans-serif;
     text-align: center;
     margin-top: 50px;
-  
   }
   
   #members {
@@ -702,3 +698,4 @@
     display: flex;
     gap: 20px;
   }
+  /*Ending Member Section*/

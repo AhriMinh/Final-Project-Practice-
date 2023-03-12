@@ -74,13 +74,13 @@ const nowInVietnam = new Date(new Date().getTime() + (vietnamTimezoneOffset * 60
 // Kiểm tra thời gian hiện tại thuộc khung giờ nào trong ngày
 let timeOfDay;
 if (nowInVietnam.getHours() < 12) {
-  timeOfDay = "sáng nay";
+  timeOfDay = "Sáng nay";
 } else if (nowInVietnam.getHours() < 17) {
-  timeOfDay = "chiều nay";
+  timeOfDay = "Trưa nay";
 } else if (nowInVietnam.getHours() < 20) {
-  timeOfDay = "trưa nay";
+  timeOfDay = "Chiều nay";
 } else {
-  timeOfDay = "tối nay";
+  timeOfDay = "Tối nay";
 }
 
 console.log(nowInVietnam.getHours());
