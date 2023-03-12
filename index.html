@@ -1,308 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Project</title>
 
-    <!-- Link boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Link boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <!--Link Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Inter:wght@100;200;300&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&family=Sevillana&family=Simonetta:ital@0;1&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <!--Link Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Inter:wght@100;200;300&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&family=Sevillana&family=Simonetta:ital@0;1&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Inter:wght@100;200;300&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&family=Sevillana&family=Simonetta:ital@0;1&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Inter:wght@100;200;300&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&family=Sevillana&family=Simonetta:ital@0;1&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
 
-    <!-- Link font awesome -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  <!-- Link font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-    />
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link 
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.css" 
-    integrity="sha512-52iYFYEOPiH9mTUxADaw8Lux1ycFqSEZ50Rc4usS3eJX4DA6xIEBK7OdKQpKvKDR4M41OOSErCSgYq7Z9Mqq5g==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer" 
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.css"
+    integrity="sha512-52iYFYEOPiH9mTUxADaw8Lux1ycFqSEZ50Rc4usS3eJX4DA6xIEBK7OdKQpKvKDR4M41OOSErCSgYq7Z9Mqq5g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Link css style -->
-    <link rel="stylesheet" href="./style/style.css">
+  <!-- Link css style -->
+  <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
 
-    <!-- Start-Navigation-section -->
-    <nav class="navbar navbar-expand-md" style="background-color: #ffedef;">
-        <div class="container">
-            <a href="#" class="navbar-brand">
-                <img style="width: 20rem;" class="brand-logo" src="./pictrure/todaydisheslogo.png" alt="brand-logo">
-            </a>
+  <!-- Start-Navigation-section -->
+  <nav class="navbar navbar-expand-md" style="background-color: #ffedef;">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img style="width: 20rem;" class="brand-logo" src="./pictrure/todaydisheslogo.png" alt="brand-logo">
+      </a>
 
-            <button 
-            class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navmenu"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#hero" class="nav-link">Donate Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#lucky-card" class="nav-link">Fortune Slip</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#menu" class="nav-link">The Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about-us" class="nav-link">About Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Ending-navigation-section -->
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link">Donate Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#lucky-card" class="nav-link">Fortune Slip</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu" class="nav-link">The Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-us" class="nav-link">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Ending-navigation-section -->
 
 
-        <!-- Start-Hero-section -->
+  <!-- Start-Hero-section -->
 
-        <section id="hero">
-          <div class="container" style="position: relative">
-            <div class="row justify-content-center align-items-center">
-              <div class="col-12">
-                <div class="row d-flex justify-content-around" >
-                  <div
-                    class="col-md-6 d-flex flex-column align-items-center justify-content-evenly"
-                  >
-                    <div>
-                      <div class="hero-title" style="margin-bottom: 50px;">
-                        Are you struggling because don't know what to eat today?
-                      </div>
-                      <div class="hero-title">
-                        Don't worry! <br />
-                        We were born to help you
-                      </div>
-                    </div>
-                    <div class="container-fluid d-flex gap-3">
-                      <a href="#about-us" class="hero-button-1">Donate Us</a>
-                      <a href="#lucky-card" class="hero-button-2">Draw a Card</a>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="container">
-                      <div class="d-flex">
-                        <p class="hero-name">TODAY'S DISHES</p>
-                      </div>
-                    </div>
-                    <div class="hero-desc">
-                      <p>
-                        Let our website decide your meal, so you can focus on
-                        enjoying it!
-                      </p>
-                    </div>
-                  </div>
+  <section id="hero">
+    <div class="container" style="position: relative">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12">
+          <div class="row d-flex justify-content-around">
+            <div class="col-md-6 d-flex flex-column align-items-center justify-content-evenly">
+              <div>
+                <div class="hero-title" style="margin-bottom: 50px;">
+                  Are you struggling because don't know what to eat today?
                 </div>
+                <div class="hero-title">
+                  Don't worry! <br />
+                  We were born to help you
+                </div>
+              </div>
+              <div class="container-fluid d-flex gap-3">
+                <a href="#about-us" class="hero-button-1">Donate Us</a>
+                <a href="#lucky-card" class="hero-button-2">Draw a Card</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="container">
+                <div class="d-flex">
+                  <p class="hero-name">TODAY'S DISHES</p>
+                </div>
+              </div>
+              <div class="hero-desc">
+                <p>
+                  Let our website decide your meal, so you can focus on
+                  enjoying it!
+                </p>
               </div>
             </div>
           </div>
-        </section>
-  
-      <!-- Ending-Hero-section -->
-
-
-
-        <!-- Start-Clock-section -->
-
-        <section id="clock">
-          <div class="time">
-              <span class="hms"></span>
-              <span class="ampm"></span>
-              <br>
-              <span class="date"></span>
-          </div>
-  
-          <p class="clock-title" id="question"></p>
-  
-          <script src="./js/clock.js"></script>
-  
-      </section>
-  
-      <!-- Ending-Clock-section -->
-
-
-
-
-
-    <!-- Start-Lucky-card-section -->
-    <section id="lucky-card">
-      <h3 class="text-center lucky-card-title">Lucky Card</h3>
-      <p class="text-center instruct">Hướng dẫn sử dụng:</p>
-      <div class="container">
-        <ul>
-        <li>Click vào nút "Draw a lucky card" để rút một quẻ may mắn ngẫu nhiên</li>
-        <li>Sau khi rút quẻ xong, thông báo "rút quẻ thành công" sẽ hiện lên, lúc này bạn chỉ cần nhấn giữ nút "Decipher lucky card" để giải quẻ và xem kết quả</li>
-        <li>Nếu muốn thay đổi kết quả, bạn có thể ấn nút "Renew the cards" để làm mới hộp quẻ và bốc lại quẻ may mắn</li>
-      </ul>
-
-      </div>
-
-        <div class="lucky-card-container">
-            <div class="box-container">
-                <img src="pictrure/thebox.jpg" alt="Ảnh" class="box-image">
-                <img src="pictrure/thecard.jpg" alt="Ảnh" class="card-image">
-            </div>
-            
-
-            <div class="button-container">
-
-              <!--Button-1-->
-              
-                <button class="renew-button" onclick="refreshPage()">
-                  <div class="icon-container">
-                      <i class="fa fa-sync"></i>
-                  </div>
-                  Renew the cards
-                </button>
-
-              <!--Button-2-->
-              
-                <button onclick="getRandomFood()" id="show-box">
-                  <div class="icon-container">
-                      <i class="fa fa-utensils"></i>
-                  </div>
-                  Draw a lucky card
-                </button>
-              
-
-              <!--Button-3-->
-              
-                <button  class="result-button">
-                  <div class="icon-container">
-                      <i class="fa fa-utensils"></i>
-                  </div>
-                  Decipher lucky card
-                  <div class="container-result">
-                      <h2> Today's Dishes:</h2>
-                      <p>Mỳ vằn thắn</p>
-                      <img src="pictrure/my-van-than-ngon.jpg" alt="dishes-image">
-                  </div>
-                  <div class="container-result">
-                    <img id="foodImage" src="" alt="">
-                    <h2 id="foodName"></h2>
-                    <p id="foodDescription"></p>
-                  </div>
-                </button>
-              
-            </div>
-        </div>
-
-        <script  src="./js/luckycard.js"></script>
-    </section>
-
-    <!--Ending-Lucky-card-section -->
-
-    <section id="menu">
-      <h3 class="text-center menu-title">The Menu</h3>
-      <div class="menu-container">
-        <div class="menu-items"></div>
-        <div class="pagination"></div>
-      </div>
-      
-      
-    </section>
-
-    <script src="./js/menu.js"></script>
-
-
-
-
-    <!-- Start-About-us-section -->
-    <section id="about-us" class="text-start py-5">
-      <h3 class="text-center about-us-title">About Us</h3>
-      <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
-          <div class="about-us-text">
-            <h3>Our Goals</h3>
-              <p>Chúng tôi là một trang web giúp bạn trả lời câu hỏi kinh điển ngày nay: "Hôm nay ăn gì?" 
-                  Để bạn có thể tận hưởng món ăn của mình một cách trọn vẹn nhất mà không hao tổn tâm lực vì một câu hỏi không có lời giải. 
-                  Những sự lựa chọn được mang đến không chỉ là những món ăn ngon - đặc sản của nhiều vùng đến từ quốc gia Việt Nam, 
-                  mà còn đảm bảo có đầy đủ dinh dưỡng và năng lượng cho ngày dài.
-              </p>
-              <ul>
-                  <li>Đem đến câu trả lời nhanh chóng</li>
-                  <li>Sự lựa chọn về đồ ăn đa dạng</li>
-                  <li>Hoàn toàn miễn phí</li>
-              </ul>
-          </div>
-          <img src="pictrure/animemaid-removebg-preview.png" style="object-fit: cover;" alt="" class="image-fluid w-50 d-none d-md-block">
         </div>
       </div>
-    </section>
-    <!-- Ending-About-us-section -->
+    </div>
+  </section>
 
-
-
-    <!--Start-Members-section -->
-    <section id="members">
-        <div class="container">
-            <h3 class="text-center our-member-title">Our members</h3>
-            <div class="row text-center g-1">
-
-                <!-- Member 1 -->
-                <div class="col-md">
-                    <div class="member">
-                        <img class="member-avatar" src="pictrure/member-1.jpg">
-                        <h3>Dương Quang Minh</h3>
-                        <p>Founder</p>
-                        <div class="member-link">
-                            <a href="https://www.facebook.com/profile.php?id=100011550905634">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="https://www.instagram.com/dgqgminh/?fbclid=IwAR3n5A4QuPtsY62mwXg0qyISZQX-dYmWYbmyTT0l-MiyGU49Q0zZFu12FrA">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://github.com/AhriMinh">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Member 2 -->
-                <div class="col-md">
-                    <div class="member">
-                        <img class="member-avatar" src="pictrure/member-2.jpg">
-                        <h3>Dương Quang Minh</h3>
-                        <p>Founder</p>
-                        <div class="member-link">
-                            <a href="https://www.facebook.com/profile.php?id=100011550905634"><i class="fab fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/dgqgminh/?fbclid=IwAR3n5A4QuPtsY62mwXg0qyISZQX-dYmWYbmyTT0l-MiyGU49Q0zZFu12FrA"><i class="fab fa-instagram"></i></a>
-                            <a href="https://github.com/AhriMinh"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Ending-Hero-section -->
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="input-group">
+          <input type="search" id="search-input" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+          <button type="button" id="search-button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Search</button>
         </div>
         
-    </section>
-    <!--Ending-Members-section -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Món ăn</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row" id="search-container">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start-Clock-section -->
+
+  <section id="clock">
+    <div class="time">
+      <span class="hms"></span>
+      <span class="ampm"></span>
+      <br>
+      <span class="date"></span>
+    </div>
+
+    <p class="clock-title" id="question"></p>
+
+    <script src="./js/clock.js"></script>
+
+  </section>
+
+  <!-- Ending-Clock-section -->
 
 
-    <!-- Footer -->
+
+
+
+  <!-- Start-Lucky-card-section -->
+  <section id="lucky-card">
+    <h3 class="text-center lucky-card-title">Lucky Card</h3>
+    <p class="text-center instruct">Hướng dẫn sử dụng:</p>
+    <div class="container">
+      <ul>
+        <li>Click vào nút "Draw a lucky card" để rút một quẻ may mắn ngẫu nhiên</li>
+        <li>Sau khi rút quẻ xong, thông báo "rút quẻ thành công" sẽ hiện lên, lúc này bạn chỉ cần nhấn giữ nút "Decipher
+          lucky card" để giải quẻ và xem kết quả</li>
+        <li>Nếu muốn thay đổi kết quả, bạn có thể ấn nút "Renew the cards" để làm mới hộp quẻ và bốc lại quẻ may mắn
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="lucky-card-container">
+      <div class="box-container">
+        <img src="pictrure/thebox.jpg" alt="Ảnh" class="box-image">
+        <img src="pictrure/thecard.jpg" alt="Ảnh" class="card-image">
+      </div>
+
+
+      <div class="button-container">
+
+        <!--Button-1-->
+
+        <button class="renew-button" onclick="refreshPage()">
+          <div class="icon-container">
+            <i class="fa fa-sync"></i>
+          </div>
+          Renew the cards
+        </button>
+
+        <!--Button-2-->
+
+        <button onclick="getRandomFood()" id="show-box">
+          <div class="icon-container">
+            <i class="fa fa-utensils"></i>
+          </div>
+          Draw a lucky card
+        </button>
+
+
+        <!--Button-3-->
+
+        <button class="result-button">
+          <div class="icon-container">
+            <i class="fa fa-utensils"></i>
+          </div>
+          Decipher lucky card
+          <div class="container-result">
+            <h2> Today's Dishes:</h2>
+            <p>Mỳ vằn thắn</p>
+            <img src="pictrure/my-van-than-ngon.jpg" alt="dishes-image">
+          </div>
+          <div class="container-result">
+            <img id="foodImage" src="" alt="">
+            <h2 id="foodName"></h2>
+            <p id="foodDescription"></p>
+          </div>
+        </button>
+
+      </div>
+    </div>
+
+    <script src="./js/luckycard.js"></script>
+  </section>
+
+  <!--Ending-Lucky-card-section -->
+
+  <section id="menu">
+    <h3 class="text-center menu-title">The Menu</h3>
+    <div class="menu-container">
+      <div class="menu-items"></div>
+      <div class="pagination"></div>
+    </div>
+
+
+  </section>
+
+  <script src="./js/menu.js"></script>
+
+
+
+
+  <!-- Start-About-us-section -->
+  <section id="about-us" class="text-start py-5">
+    <h3 class="text-center about-us-title">About Us</h3>
+    <div class="container">
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <div class="about-us-text">
+          <h3>Our Goals</h3>
+          <p>Chúng tôi là một trang web giúp bạn trả lời câu hỏi kinh điển ngày nay: "Hôm nay ăn gì?"
+            Để bạn có thể tận hưởng món ăn của mình một cách trọn vẹn nhất mà không hao tổn tâm lực vì một câu hỏi không
+            có lời giải.
+            Những sự lựa chọn được mang đến không chỉ là những món ăn ngon - đặc sản của nhiều vùng đến từ quốc gia Việt
+            Nam,
+            mà còn đảm bảo có đầy đủ dinh dưỡng và năng lượng cho ngày dài.
+          </p>
+          <ul>
+            <li>Đem đến câu trả lời nhanh chóng</li>
+            <li>Sự lựa chọn về đồ ăn đa dạng</li>
+            <li>Hoàn toàn miễn phí</li>
+          </ul>
+        </div>
+        <img src="pictrure/animemaid-removebg-preview.png" style="object-fit: cover;" alt=""
+          class="image-fluid w-50 d-none d-md-block">
+      </div>
+    </div>
+  </section>
+  <!-- Ending-About-us-section -->
+
+
+
+  <!--Start-Members-section -->
+  <section id="members">
+    <div class="container">
+      <h3 class="text-center our-member-title">Our members</h3>
+      <div class="row text-center g-1">
+
+        <!-- Member 1 -->
+        <div class="col-md">
+          <div class="member">
+            <img class="member-avatar" src="pictrure/member-1.jpg">
+            <h3>Dương Quang Minh</h3>
+            <p>Founder</p>
+            <div class="member-link">
+              <a href="https://www.facebook.com/profile.php?id=100011550905634">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/dgqgminh/?fbclid=IwAR3n5A4QuPtsY62mwXg0qyISZQX-dYmWYbmyTT0l-MiyGU49Q0zZFu12FrA">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://github.com/AhriMinh">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="col-md">
+          <div class="member">
+            <img class="member-avatar" src="pictrure/member-2.jpg">
+            <h3>Dương Quang Minh</h3>
+            <p>Founder</p>
+            <div class="member-link">
+              <a href="https://www.facebook.com/profile.php?id=100011550905634"><i class="fab fa-facebook"></i></a>
+              <a
+                href="https://www.instagram.com/dgqgminh/?fbclid=IwAR3n5A4QuPtsY62mwXg0qyISZQX-dYmWYbmyTT0l-MiyGU49Q0zZFu12FrA"><i
+                  class="fab fa-instagram"></i></a>
+              <a href="https://github.com/AhriMinh"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--Ending-Members-section -->
+
+
+  <!-- Footer -->
   <footer class="text-center text-lg-start footer-total" style="background-color: #ffedef">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
@@ -314,7 +343,8 @@
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Today's Dishes</h6>
             <p>
-              Dự Án được thành lập vào tháng 2 năm 2023. Đây là Project cuối khóa C4E135 của học viên Dương Quang Minh và Trần Anh Kiên
+              Dự Án được thành lập vào tháng 2 năm 2023. Đây là Project cuối khóa C4E135 của học viên Dương Quang Minh
+              và Trần Anh Kiên
             </p>
           </div>
           <!-- Grid column -->
@@ -418,9 +448,12 @@
   </footer>
   <!-- End of Footer -->
 
-    
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
